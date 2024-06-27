@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowbite Flask</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='dist/css/output.css')}}">
+</head>
+
+<body>
+
+    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+        <div class="container flex flex-wrap items-center justify-between mx-auto">
+            <a href="https://flowbite.com/" class="flex items-center">
+                <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo">
+                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+            </a>
+            <div class="flex md:order-2">
+                <button type="button"
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get
+                    started</button>
+                <button data-collapse-toggle="navbar-cta" type="button"
+                    class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-cta" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+                <ul
+                    class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<div id="default-carousel" class="relative w-full" data-carousel="slide">
+    <!-- Carousel wrapper -->
+    <div class="relative lg:mx-96 h-56 overflow-hidden rounded-lg md:h-96 ">
+        
+         <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEUAAACnej3aAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEUAAACnej3aAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEUAAACnej3aAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEUAAACnej3aAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 5 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEUAAACnej3aAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+    </div>
+    <!-- Slider indicators -->
+    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+    </div>
+    <!-- Slider controls -->
+    <button type="button" class="lg:ml-96 absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="lg:mr-96 absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+</div>
+
+
+
+<div class="flex flex-col place-items-center">
+    <h1 class="pt-8 mb-8 text-4xl font-extrabold leading-none tracking-tight text-center text-gray-900 md:text-5xl lg:text-6xl dark:text-white">NEWS</h1>
+    <div class="flex flex-col mb-8">
+        <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">        
+            <tbody>
+                {% for event in events %}
+                {% if event.date is not none %}
+                
+                <tr class=" bg-white dark:bg-gray-800 dark:border-gray-700">
+                    <th scope="row" class="font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        <span class="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">{{ event.date }}</span>
+                    </th>
+
+                </tr>
+                {% endif %}
+                <tr class="bg-white dark:bg-gray-800 dark:border-gray-700">
+                    <th class="px-12">
+                        {{ event.name }}
+                    </th>
+                
+                    <td class="px-12">
+                        {{ event.tempat }}
+                    </td>
+                    <td class="px-12">
+                        {{ event.time }}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<div class="flex flex-col place-items-center bg-red-800">
+    <h1 class="pt-8 mb-8 text-4xl font-extrabold leading-none tracking-tight text-center text-gray-900 md:text-5xl lg:text-6xl dark:text-white">NEWS</h1>
+    <div class="flex flex-col  mb-8">    
+        <table class="w-full text-sm text-left rtl:text-right text-white-500 dark:text-gray-400">        
+            <tbody>
+                {% for berita in news %}
+                {% if berita.date is not none %}
+                    
+                <tr class=" dark:bg-gray-800 dark:border-gray-700">
+                    <th scope="row" class="font-medium text-gray-900 whitespace-nowrap dark:text-white" style="text-align: left;">
+                        <span class="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">{{ berita.date }}</span>
+                    </th>
+
+                </tr>
+                {% endif %}
+                <tr class="dark:bg-gray-800 dark:border-gray-700">
+                    <td style="text-align: left">
+                        - {{ berita.news }}
+                    </td>
+                </tr>
+                
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div>
+    <h1 class="pt-8 mb-8 text-4xl font-extrabold leading-none tracking-tight text-center text-gray-900 md:text-5xl lg:text-6xl dark:text-white">NEWS</h1>
+    <p class="text-center text-xl text-gray-900 dark:text-white">Ulang Tahun</p>
+    <div class="flex justify-center mb-8 pb-8">
+        {% for erik in anggota %}
+        <div class="flex items-center gap-4 px-4">
+            <img class="w-10 h-10 rounded-full" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAngMBIgACEQEDEQH/xAAcAAACAwEBAQEAAAAAAAAAAAAABAUGBwMBCAL/xAA8EAABAwMCBAQCCQIEBwAAAAABAAIDBAUREiEGEzFBByJRcWGRFBUjMoGhscHRUuEIM0LCFiU0YmOCkv/EABkBAAIDAQAAAAAAAAAAAAAAAAAEAQIDBf/EACIRAAICAwEAAgIDAAAAAAAAAAABAhEDITESBEEiMhNRYf/aAAwDAQACEQMRAD8A3FCEIAVutdFbbbVV0x+zp4nSu9gMr4+uFZNcK+ermGJZ5HSOGc4JOSvpPxmrzQ+H9w0HDqh0cA+Ic4Z/IFfNtEwvlG5JJ7qk3RpBWTvC9rfV1DQc4zn0WwWO1xwRtIGNvRU/g+iLC1579dlo1C0BoHZKvbHYqkPQsAAACcjbhcIgE2wIohs/YbsvQ34LqxowumkK/kxchfGOy/BCZIC5uAQ1RKkJytUXX0zJWkOblTEiSnbsqM3iZxxXYojC+RjBj9Fk1xp+ROQRgdl9CXaASRPacbhYzxfQcmd2OnZTB0ymSNo2TwOvrrtwg2jmcXTW2TkE53LDuw/Lb8Foqwj/AA6VHKu95pHHHOgikA9S0uH+5bum0IvoIQhSQCEIQBlv+IR7m8I0TWuIDq9ur4+R6xGwxl9S1bp4/Quk4JhkaMiKuY4+xa8Z/NY9wrT5kaVlk0jfArZptghEULNlaqPoFWrYQ1rQPRWKkcMDdLDhLQ9k2xKQnom4yrIpIZYV+wVxaV+8rQwaP0Vzev2CvxIcoYIXkGUrKPKm3JeQDosmMRZDVzdjn0WXcc04JOOvULVa5uFn3G1Lrgc9ozthC6TLhHeBLy3jlzemqjkyPYtX0OvnnwSGnxBxg/8ARyj82r6GTkeHPl0EIQpKghC8KAM98aJqOq4OraD6RD9MjfFK2EvGrAeN8e2Vk/CMWIC7uDhWbxPhe/iSujdkEua9p9RpCieGouXBjGPMlsk7tDmLH5osP01lFE6aU+Vo6Dqoee932vkLrfBU8kfdETD+vRN1kbHSsMw1Rs30nplNHidtKGwxN5knZowAPclYLYw0K0nE/FFvINTb5XRjrrBJVntPiBRVJbHVRup5MbglREfFXMkEM9faonP6MfUnP47IqaSlqzzZqaF7Hb86Fwez3yNx8lZ2lwhJP7NGo7hDVM1QvBGMpwOVBshFrlawH7I/urtSv5jQeuRkKYysrOCR3dIGgknZRF24horbE588o8o6Z3Xe6T8mnec4OO6oNZbKepmNTXa5xnyxjJ+Q7onLdEwxpqz2t8QK2tlMNmo9RzgOLSUm+XjSp3ayp33ODp+W6lo6yO0xgOfQW5p+6J5BqP4D+eyjn8ayBpdBWUNWwfe5Mu4/A/yoptFlX0zrQX25U720l9p5GOJ8szm4+fqmb9E2e3SEjOG52S7L9DdYtD26sjdpCZeA+hkibn7hxlEf9Imis+DtXSUXHEjamVkbpYHRxaj1cSDhfQGc9F822O3zRcSU8kYIzKBn3IX0i0YGE1jn60I5YeWmfpCELQyBeFeoQBlXijbtd7ZPjAfTNyR6hx/sqtbAMsA2GcLSfEaAOggm22a5ufkVmFBJucH7r0lkVSZ0cTvGmWSa2NqqZx3G3UKgXG0u+s+VK+Tkg7jOx98b4Wo2t4liAXeSxQ1DtWBk/BUhKjSSvpnH/CRdc46igY8xvwWuppmROjOMEZPQfgrnwzw2202wsic1lY55cfPlmDjY9j65+JU3ScPOjOzsDr0U1T2xsY8znPPqT+y2cnJUYeIxdpkNLZzJbyXtbFK3o1r9QPsVKcMOe6ANl+83ypmeNsbNhv6rjYgBK/3KqlTLN3FnG8Q/S6plPnDS7ffskrpbpGDRQmJgAxzHbux3wMbe6kpx/wAx1ZT3IZMN2gqErsm/KRld+4LiqLgZ45cFzPuvnka8uwQfPjp8FC1fDFNTWYxcuKapdIXZYN4+2xI+C2Kps8cpy1z2kHI3ykjYYwTzHFw9sK7m0qKKELsoPCfDsrWl8z3aj11blWWopxF5B6EKfZSx0rSGgKHriDL16ZJ9llds3+hDhq1NfeKSRwBDpQflv+y1QKk8IR6qqncAdLQ52436f3V2CYwLQl8l3Oj1CELcXBCEIAgeM7e64WCoZHvJEOaweuOo/EZWNUvJ58hYNJlAOk+q+gnbgrNL/wAB1cdeaq0tbLA5+TFkB0eeuOxCwywvaGcGRRTixCwy5aBnurbRkOAVEt0ppqp8T9i1xyPQq326pBaCEpxj9XEscLRgLuGBJU8wICdDtkzF6E5ppkdcyGRO33CXs2c6h3X5v07WNw89WkqP4evVMXFutrg3bLXAj8lRtWaxi/BJV4LZtfRSNA4SMBBVevd9o45A10sbdRwNTwP1UvaJmS04kjcC3bp6qItWE4vzsliwJWcABdjKMJKqm2Wk2qMccW2IV0mGndVuok1vmzuCNHzUpcagaXYOEnabTVXVuuDSIxLh73Hpt6d0vC29Dcmox2WDg2A6J6g7NyI2N9B1J/T5K0JagpIqKmZBCMNZ+Z9Uyn4R8xo5mSXuTYIQhWKAhCEAC8K9QgDHOLoDQ8U1YaCGyP5gx/3b/qSnbZVbBSPidQaa2kr2jZ7TE73G4/UqvW/IwMrn5lUzr/GleNFzo6k7bqVhnyFWaUuaATlPNuUFP/nSBh+JURkGSKfDlxXbJrgWyRSAANLXMcMhwVVt/D31bO6eCEsc/IeAdirj9e0bwQx3M9l+WXWilOmRg+as0mTH2lVFXdwqyurhWywNdMcAOeScAdleLJQ/V9ByCc7k9MJB14p43BsTWbfFfp3EFKAOYSz442QqRWcZyXCTmm0ZCjKuq2K5w18Vya59I8PaDglvYpWrje0EE7qspEwSRGXGozlXXgiLl2Nrsf5kjnft+yos8ZJ3yVpllpjSWumgds5rBn3O5W3x1tsX+XLSQ6hCE2IAhCEACEIQAIQhAEVxJaxd7VNTADmY1RE9nDp/H4rLqUmKXlyN0vacOaRgg5WynuqNx1YdIdd6PDS3H0hn9Xo4fFL58fpWhr42Xy/LONBIx7QCuXENmobvSDmsIlj+65ji0/MKHtlcM41YVhhfzG9dkoh9utlXgs1K0CJ01Vse8qfbw5RSNyyrqGkdSJTn4qSqLaJTqYN/ULg23V7donux3VrX9Gyya6LOsFvijJkmqHv/AKjM7qlYrFRzz6M1EgzkB0ziMfHdTLbRVSuzO9xHpnCkaeiZSjDW4PqpKSy6qzvTRw0lKyGBjWMY3ADRjCjq1+QSmp5msaQSooCS41jKWmI1P7k7Adyoq3SMbrbGbDQfWNzB05hhOt57H0HzV+CTtdvittK2CHfG7nHq49ynU7jh5RzcuT3KwQhC0MwQhCABCEIAEIQgAVT8T6gU3Btbvh0jmRjB9XBWslZl43XHl0Fut7XeaSV0zh8GjA/N35Kk3UWXxq5JGdUF4ex32zt/6/5V1st4ZIAHOGf1WYNKbpK2Sldljzp6kJFr7OonZuNFOyQA5UpG5mFmfD1zuVUQ2no55C0ZdlmB8zsrD9dSU7xHVxvgef8ATIMZ9vVSpUDx3wtjpGYUfWVLIxuVAz8RRNYftG7fFVu68TmTLKchx/q7D+VDmmR/E0Sl6u4YSA4Z9B1SfB1ye/i6hdK7yF5YG9vM0j9cKtGWSZxc4lxPcpu366WriqGDzxva8e4OVEZU7JnG4tH0AhcaSojqqaKeI5ZKwPaR6EZXZdI5AIQhAAhCEACEIQAIQhAHhWA+JVx+uOKah8btUNOORGc9dPU//RP5LaOJKyoprfI23t1VsvkiGcaSerj7fwqBbOAIWlkl2qNX/ihJGf8A2O/yWGaX0M/HjX5MzW12avu1U2mt8DpZM+bs1o9Sey03hrw/ora+OouR+l1bcENx9mw+3f3PyVwoaGmooGw0kLKeBvZowSmWanDEQDW+p6rFI3czhyWRgF50N9B1K8npaWqj5crGSMP+iVmQfwKYc2OEF8jtx1JSouVLJuxwKHS6TH0+CL+H7UCT9W0e/X7FuD+ShLhwbZKqbyNlpHdxCcA/HBBCtMlRCcAP0uPTBSsz2vGiTBB9ehVPxNV6fSkXDhX6p0vZVNmhcdiRh3ySxp8N2Cn6+3OjlMkb3yRO3AJzo+CUfBlvRUaLaRa/D25c6hfb5XfaU+7Piw/wVb1kdFNNba2Orp/vxnoehB6grULZXwXGkbUU7std1Hdp7gpzDP0qOf8AIx+ZWuMcQvF6txcEIQgAQhCABc53FkL3jq1pIyhCAKdarhUV1PUVlQ4Ol1HG2zQOwCkWu0xsf1e7qSvEJOR0IoZhGvBeSUyTpbsvEKVwpLpTuN7nU0VunlgcA8NIGRlVXhtj6oDmTzAnqQ5CErL9jqYtYtExfqR1sojXwVlU6VmBpkeCwj0xj9E1ba+eoYBIW4x6IQpemW7DZKMcdHM7gfgVwrIWNkOkYB3QhbPgpPohJG3B2THD9XNQ3SFlO7DJnhj2noR/KELOH7FMn6M0YL1CF0jlAhCEAf/Z" alt="">
+            <div class="font-medium dark:text-white">
+                <div>{{ erik.nama }}</div>
+                <div class="text-sm text-gray-500 dark:text-gray-400">{{ erik.date }}</div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <p class="text-center text-xl text-gray-900 dark:text-white">Ulang Tahun</p>
+    <div class="flex justify-center mb-8 pb-8">
+        <div class="flex items-center gap-4">
+            <img class="w-10 h-10 rounded-full" src="data:image/jpeg;base64,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" alt="">
+            <div class="font-medium dark:text-white">
+                <div>Jese Leos</div>
+                <div class="text-sm text-gray-500 dark:text-gray-400">Joined in August 2014</div>
+            </div>
+        </div>
+        <div class="pl-8 flex items-center gap-4">
+            <img class="w-10 h-10 rounded-full" src="data:image/jpeg;base64,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" alt="">
+            <div class="font-medium dark:text-white">
+                <div>Jese Leos</div>
+                <div class="text-sm text-gray-500 dark:text-gray-400">Joined in August 2014</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="bg-jasper pb-8">
+    <h1 class="pt-8 mb-8 text-4xl font-extrabold leading-none tracking-tight text-center text-gray-900 md:text-5xl lg:text-6xl dark:text-white">GALLERY</h1>
+    <div id="gallery" class="relative w-full" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="{{ url_for('static', filename='img1.jpeg') }}" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+            </div>
+            <!-- Item 5 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+            </div>
+        </div>
+        <!-- Slider controls -->
+        <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
+    </div>
+</div>
+
+<div>
+    <h1 class="pt-8 mb-8 text-4xl font-extrabold leading-none tracking-tight text-center text-gray-900 md:text-5xl lg:text-6xl dark:text-white">VIDEO</h1>
+    <div class="container md:w-full lg:w-1/2 item-center border border-gray-200 rounded-lg dark:border-gray-700">
+        <video autoplay controls>
+            <source src="{{ url_for('static', filename='1.mp4') }}" type="video/mp4">
+        </video>      
+    </div>
+</div>
+  
+<footer class="bg-gray-300 dark:bg-gray-900">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+              <a href="https://flowbite.com/" class="flex items-center">
+                  <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 me-3" alt="FlowBite Logo" />
+                  <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+              </a>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
+                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                          <a href="https://flowbite.com/" class="hover:underline">Flowbite</a>
+                      </li>
+                      <li>
+                          <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                          <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</a>
+                      </li>
+                      <li>
+                          <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline">Privacy Policy</a>
+                      </li>
+                      <li>
+                          <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
+          </span>
+          <div class="flex mt-4 sm:justify-center sm:mt-0">
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
+                        <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
+                    </svg>
+                  <span class="sr-only">Facebook page</span>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 16">
+                        <path d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"/>
+                    </svg>
+                  <span class="sr-only">Discord community</span>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
+                    <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd"/>
+                </svg>
+                  <span class="sr-only">Twitter page</span>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
+                  </svg>
+                  <span class="sr-only">GitHub account</span>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z" clip-rule="evenodd"/>
+                </svg>
+                  <span class="sr-only">Dribbble account</span>
+              </a>
+          </div>
+      </div>
+    </div>
+</footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    
+
+
+</body>
+
+</html>
